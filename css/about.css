@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Evogria", sans-serif;
+}
+li a {
+  font-family: "Roboto", sans-serif;
+}
+.evogria-font {
+  font-family: "Evogria", sans-serif;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+p,
+p span {
+  color: #22455c;
+  font-weight: 500;
+  font-size: 12px;
+}
+li {
+  font-size: 12px;
+}
+.container {
+  max-width: 1500px;
+}
+section:not(#hero) .container {
+  padding: 50px 30px;
+}
+h2 {
+  font-size: 24px;
+  font-family: "Evogria", sans-serif;
+}
+h3 {
+  font-size: 18px;
+  font-family: "Evogria", sans-serif;
+}
+h4 {
+  font-size: 14px;
+  font-family: "Evogria", sans-serif;
+}
+.ch2 {
+  margin-bottom: 35px;
+}
+.ch2 span {
+  position: relative;
+  margin-left: 10px;
+  font-family: "Evogria", sans-serif;
+}
+.ch2 span::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  background: #f3bc00;
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+}
+h2 span {
+  font-family: "Evogria", sans-serif;
+}
+/* header from here */
+
+#nav-1 {
+  color: #fff;
+  background: #04254a;
+}
+#nav-1 ul {
+  display: flex;
+  align-items: center;
+}
+#nav-1 ul li a {
+  padding: 14px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  font-family: "Evogria", sans-serif;
+}
+#nav-1 ul li a {
+  color: #fff;
+}
+#nav-1 ul li a:hover {
+  background: #fff;
+  color: #04254a;
+}
+#nav-1 .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header input,
+#offcanvas input {
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+header input {
+  margin-left: 10px;
+}
+header input:focus,
+#offcanvas input:focus {
+  box-shadow: 0px 0px 6px 1px #00ffd0;
+}
+#offcanvas input {
+  border: 2px solid #07a0d4;
+}
+#offcanvas input::placeholder {
+  font-style: italic;
+}
+img[alt="Menu"] {
+  display: none;
+}
+#offcanvas {
+  display: none;
+}
+#menu {
+  display: flex;
+}
+#nav-1 input::placeholder {
+  font-style: italic;
+}
+#nav-2 {
+  background: #f3bc00;
+}
+#nav-2 img[alt="logo"] {
+  width: 90px;
+}
+#nav-2 .container {
+  justify-content: space-between;
+}
+#nav-2 ul li {
+  margin: 0 20px;
+}
+#nav-2 ul li a {
+  color: rgb(2, 35, 73);
+  display: inline-block;
+  font-family: "Evogria", sans-serif;
+}
+
+/* hero section from here */
+
+#hero {
+  min-height: 575px;
+  background: url("../img/hero_about.jpg") center bottom no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+#hero h1 {
+  font-size: 72px;
+  margin: 0 50px;
+  color: #061731;
+  -webkit-text-stroke: 1px #fff;
+  text-shadow: 1px 1px 6px #000;
+}
+#hero .caption {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  top: 10%;
+  width: 100%;
+  left: 0;
+}
+#hero .caption p:first-of-type:first-letter {
+  font-size: 55px;
+}
+.caption p:first-of-type {
+  text-shadow: 1px 1px 3px #000;
+  font-family: "Roboto", sans-serif;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 900;
+  font-size: 27px;
+  color: #061731;
+}
+#hero .caption p:last-of-type {
+  font-size: 50px;
+  color: #061731;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.89);
+  text-shadow: 1px 1px 2px #000;
+}
+#hero img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 600px;
+  z-index: 1;
+}
+
+/* history section */
+
+#history .container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 50px;
+}
+.his-item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.his-item-1-item img {
+  margin-bottom: 30px;
+}
+.his-item-1-item h3 {
+  font-family: "Roboto", sans-serif;
+  color: #2e3a48;
+  font-weight: 800;
+}
+/*-------------{ leader section }-------------*/
+
+/* new  start*/
+.leader-man {
+  max-height: 491px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/* new  end*/
+.side-nav li {
+  font-weight: 600;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  cursor: pointer;
+}
+.side-nav li:hover {
+  background: #061b36;
+  color: #fff;
+}
+.side-nav li.active {
+  background: #061b36;
+  color: #fff;
+}
+.leader-man .d-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+#leader .container div h2 {
+  background: #061b36;
+  color: #fff;
+  padding: 8px 20px;
+}
+.leader-man .d-grid div {
+  border: 2px solid #6f81ff;
+}
+.side-nav ul {
+  margin-top: 10px;
+  box-shadow: 0px 0px 7px -1px #0000007a;
+  padding: 20px 15px;
+  background: #ececec;
+}
+.side-nav > a {
+  border: none;
+  background: #198dc0;
+  color: #fff;
+  margin-top: 20px;
+  padding: 6px 13px;
+  border-radius: 5px;
+  align-self: center;
+  box-shadow: 0px 3px 4px -1px #000000bd;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.side-nav > a:hover {
+  background: #146b92;
+}
+.side-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------{ Photo Integration start }-----------------*/
+
+.leader-man .d-grid > div:first-child {
+  background: url("../img/sir-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(2) {
+  background: url("../img/sir-2.jpg") center left no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(3) {
+  background: url("../img/sir-3.jpg") center center no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(4) {
+  background: url("../img/sir-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(5) {
+  background: url("../img/sir-2.jpg") center left no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(6) {
+  background: url("../img/sir-3.jpg") center center no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(7) {
+  background: url("../img/sir-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+.leader-man .d-grid > div:nth-child(8) {
+  background: url("../img/sir-2.jpg") center left no-repeat;
+  background-size: cover;
+}
+/* ---------------{ Photo Integration end }-----------------*/
+
+#leader .container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 30px;
+}
+/* footer */
+footer {
+  padding: 50px;
+  background: #1295c9;
+  color: #fff;
+}
+footer .footer_item:first-child img.d-block {
+  width: 90px;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+footer p,
+footer li a,
+footer li {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  color: #fff;
+}
+footer li a {
+  font-weight: 500;
+}
+footer li a:hover {
+  background: #fff;
+}
+.media img {
+  width: 30px;
+  margin: 5px;
+}
