@@ -336,17 +336,6 @@
           value.style.height = `${height}px`;
         });
       }
-      function heightDefine_trustees() {
-        const div_t = document.querySelectorAll(
-          "#board_trustees .container .d-grid div"
-        );
-
-        div_t.forEach((value) => {
-          let height_t = value.clientWidth;
-
-          value.style.height = `${height_t}px`;
-        });
-      }
 
       heightDefine_trustees();
       heightDefine_leaders();
