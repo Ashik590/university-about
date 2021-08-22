@@ -190,16 +190,16 @@
         <div class="side-nav">
           <h2>Navigation menu</h2>
           <ul class="list-group">
-            <li class="list-group-item" data-count="0" data-scroll="#one_about">
+            <li class="list-group-item" data-scroll="#one_about">
               Office of the Register
             </li>
-            <li class="list-group-item" data-count="1" data-scroll="#two_about">
+            <li class="list-group-item" data-scroll="#two_about">
               Office of the Register
             </li>
-            <li class="list-group-item" data-count="2" data-scroll="#three_about">
+            <li class="list-group-item" data-scroll="#three_about">
               Office of the Register
             </li>
-            <li class="list-group-item" data-count="3" data-scroll="#four_about">
+            <li class="list-group-item" data-scroll="#four_about">
               Office of the Register
             </li>
           </ul>
@@ -207,70 +207,63 @@
         </div>
         <div class="leader-man">
           <div id="one_about">
-            <h2>
-              university leaders
-            </h2>
+            <h2>university leaders</h2>
             <div>
-            <div class="d-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="d-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
-        </div>
           <div id="two_about">
-            <h2>
-              university leaders
-            </h2>
+            <h2>university leaders</h2>
             <div>
-            <div class="d-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="d-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
-        </div>
           <div id="three_about">
-            <h2>
-              university leaders
-            </h2>
+            <h2>university leaders</h2>
             <div>
-            <div class="d-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="d-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
-        </div>
           <div id="four_about">
-            <h2>
-              university leaders
-            </h2>
+            <h2>university leaders</h2>
             <div>
-            <div class="d-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="d-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
         </div>
@@ -335,30 +328,32 @@
     <script>
       //leader-man div's d-grid div's divs height integration
 
-      function heightDefine_leaders(){
+      function heightDefine_leaders() {
         const divs = document.querySelectorAll(".leader-man .d-grid > div");
-  
-        divs.forEach((value)=>{
+
+        divs.forEach((value) => {
           let height = value.clientWidth;
-  
+
           value.style.height = `${height}px`;
         });
       }
-      function heightDefine_trustees(){
-        const div_t = document.querySelectorAll("#board_trustees .container .d-grid div");
+      function heightDefine_trustees() {
+        const div_t = document.querySelectorAll(
+          "#board_trustees .container .d-grid div"
+        );
 
-        div_t.forEach((value)=>{
+        div_t.forEach((value) => {
           let height_t = value.clientWidth;
 
-          value.style.height = `${height_t}px`
-        })
+          value.style.height = `${height_t}px`;
+        });
       }
 
-      heightDefine_trustees()
-      heightDefine_leaders()
+      heightDefine_trustees();
+      heightDefine_leaders();
 
-      window.addEventListener("resize", heightDefine_leaders)
-      window.addEventListener("resize", heightDefine_trustees)
+      window.addEventListener("resize", heightDefine_leaders);
+      window.addEventListener("resize", heightDefine_trustees);
       // offcanvas menu logic
 
       const menu = document.getElementById("offcanvas");
@@ -377,15 +372,15 @@
       const menu_item = document.querySelectorAll("#leader .side-nav li");
       const leaderMan = document.querySelector(".leader-man");
 
-      menu_item.forEach((value) =>{
+      menu_item.forEach((value) => {
         let id = value.getAttribute("data-scroll");
         let div = document.querySelector(id);
-        let count = parseInt(value.getAttribute("data-count"))
-        value.addEventListener("click", (e)=>{
-          leaderMan.scrollTop = div.offsetTop - leaderMan.offsetTop
-          console.log("OffsetTop", div.offsetTop - leaderMan.offsetTop)
-        })
-      })
+        let count = parseInt(value.getAttribute("data-count"));
+        value.addEventListener("click", (e) => {
+          leaderMan.scrollTop = div.offsetTop - leaderMan.offsetTop;
+          console.log("OffsetTop", div.offsetTop - leaderMan.offsetTop);
+        });
+      });
     </script>
   </body>
 </html>
